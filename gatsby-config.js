@@ -33,5 +33,18 @@ module.exports = {
         icon: "src/images/favicon.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: "sTMFPsFhdP1Ssg",
+        apiHost: "https://app.posthog.com",
+        head: true,
+        isEnabledDevMode: true,
+        initOptions: {
+          _capture_metrics: true,
+          persistence: "localStorage+cookie",
+        },
+      },
+    },
   ],
 };
