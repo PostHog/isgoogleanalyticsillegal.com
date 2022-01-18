@@ -1,184 +1,74 @@
-import * as React from "react"
+import * as React from "react";
+import Layout from "../components/Layout";
+import Map from "../components/Map";
+import Main from "../templates/Main";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-// data
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
-
-// markup
-const IndexPage = () => {
+const Image = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
-}
+    <figure>
+      <Map className="h-auto w-full" />
+      <figcaption className="text-[14px] font-medium flex items-center justify-end space-x-2 mt-6">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.5">
+            <path
+              d="M10.6916 5.61583C10.3316 5.25583 9.77332 5.25583 9.41332 5.61583C9.05332 5.97583 9.05332 6.53411 9.41332 6.89411L10.6199 8.09997H5.20151C4.69737 8.09997 4.30151 8.49583 4.30151 8.99997C4.30151 9.50412 4.69737 9.89997 5.20151 9.89997H10.6199L9.39573 11.1241C9.03573 11.4841 9.03573 12.0424 9.39573 12.4024C9.57573 12.5824 9.80987 12.6724 10.0257 12.6724C10.2599 12.6724 10.494 12.5824 10.6557 12.4024L13.4099 9.64822C13.5716 9.4865 13.6799 9.25237 13.6799 9.01822C13.6799 8.78408 13.5899 8.54993 13.4099 8.38822L10.6916 5.61583Z"
+              fill="white"
+            />
+            <path
+              d="M8.99995 0.450012C4.28413 0.450012 0.449951 4.28419 0.449951 9.00001C0.449951 13.7158 4.28413 17.55 8.99995 17.55C13.7158 17.55 17.55 13.7158 17.55 9.00001C17.55 4.28419 13.7158 0.450012 8.99995 0.450012ZM8.99995 15.75C5.27413 15.75 2.24995 12.7258 2.24995 9.00001C2.24995 5.27419 5.27413 2.25001 8.99995 2.25001C12.7258 2.25001 15.75 5.27419 15.75 9.00001C15.75 12.7258 12.7258 15.75 8.99995 15.75Z"
+              fill="white"
+            />
+          </g>
+        </svg>
 
-export default IndexPage
+        <span>
+          Select a country in <strong className="text-[#FF5F5F]">red</strong> to
+          read details about Google Analytics legality
+        </span>
+      </figcaption>
+    </figure>
+  );
+};
+
+const Body = () => {
+  return (
+    <>
+      <p>
+        Due to recent rulings on the GDPR, Google Analytics users are under fire
+        for transmitting personal data outside of the EU.
+      </p>
+      <p>
+        If your country is bound by the GDPR, continuing to use Google Analytics
+        may now be illegal.
+      </p>
+      <p>
+        The best solution is to use an analytics provider that keeps data on
+        your own infrastructure.
+      </p>
+    </>
+  );
+};
+
+const Title = () => {
+  return (
+    <span className="inline-block max-w-[410px]">
+      Is Google Analytics{" "}
+      <span className="text-[96px] text-[#FC4E4E]">ILLEGAL</span> in your
+      country?
+    </span>
+  );
+};
+
+export default function Index() {
+  return (
+    <Layout hideMapLink>
+      <Main image={<Image />} body={<Body />} title={<Title />} />
+    </Layout>
+  );
+}

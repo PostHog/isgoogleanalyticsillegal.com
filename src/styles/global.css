@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  color: white;
+  background: #111111;
+}
+
+p,
+li {
+  @apply text-[16px] font-medium my-[17px] leading-[25.5px];
+}
+
+a {
+  @apply inline-block;
+}
+
+.text-ticker p {
+  @apply m-0 uppercase h-[275px];
+}
+.text-ticker {
+  animation: ticker 18s linear infinite;
+}
+
+.body-container p:first-of-type {
+  @apply first-letter:float-left first-letter:text-[56px] first-letter:leading-[.9] first-letter:font-bold;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 1650px, 0);
+  }
+}
