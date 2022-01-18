@@ -80,30 +80,42 @@ export default function Layout({ children, hideMapLink, title }) {
               {children}
             </div>
           </main>
-          <footer className="w-full px-5 py-14 border-t border-white border-opacity-20">
-            <div className="max-w-[1220px] mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
-              <div>
-                <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 m-0 mb-4 sm:mb-1">
-                  <span>This message is furnished by</span>
-                  <img className="max-w-[130px]" src={logo} />
-                </h4>
-                <p className="m-0 text-[16px] font-bold">
-                  PostHog is the only{" "}
+          <footer className="w-full px-5 pt-14 pb-3 border-t border-white border-opacity-20">
+            <div className="max-w-[1220px] mx-auto">
+              <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
+                <div>
+                  <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 m-0 mb-4 sm:mb-1">
+                    <span>This message is furnished by</span>
+                    <img className="max-w-[130px]" src={logo} />
+                  </h4>
+                  <p className="m-0 text-[16px] font-bold">
+                    PostHog is the only{" "}
+                    <a
+                      href="https://github.com/PostHog/posthog"
+                      className="text-[#FF7636]"
+                    >
+                      open source product analytics platform
+                    </a>{" "}
+                    where customer data never leaves your infrastructure.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
                   <a
-                    href="https://github.com/PostHog/posthog"
-                    className="text-[#FF7636]"
+                    className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00]"
+                    href="https://posthog.com"
                   >
-                    open source product analytics platform
-                  </a>{" "}
-                  where customer data never leaves your infrastructure.
-                </p>
+                    Learn more at PostHog.com
+                  </a>
+                </div>
               </div>
-              <div className="flex-shrink-0">
+              <div className="sm:text-right mt-8 sm:mt-14">
                 <a
-                  className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00]"
-                  href="https://posthog.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.amcharts.com/"
+                  className="text-[12px] font-bold text-white opacity-50"
                 >
-                  Learn more at PostHog.com
+                  SVG maps courtesy of amCharts
                 </a>
               </div>
             </div>
