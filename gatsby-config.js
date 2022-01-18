@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Is Google Analytics illegal?`,
-    url: `https://www.isgoogleanalyticsillegal.com`,
+    siteUrl: `https://www.isgoogleanalyticsillegal.com`,
     titleTemplate: `%s - Is Google Analytics illegal?`,
     description: `Due to recent rulings on the GDPR, Google Analytics users are under fire
     for transmitting personal data outside of the EU.`,
