@@ -16,9 +16,9 @@
   },
   "dependencies": {
     "gatsby": "^4.5.3",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^5.5.0",
     "gatsby-plugin-sitemap": "^5.5.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"

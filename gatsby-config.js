@@ -13,11 +13,10 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        google: {
-          families: ["Libre Franklin"],
-        },
+        fonts: [`Libre Franklin`],
+        display: "swap",
       },
     },
   ],
