@@ -4,6 +4,7 @@ import React from "react";
 export const Netherlands = ({ className = "" }) => {
   return (
     <svg
+      className={className}
       width="749"
       height="513"
       viewBox="0 0 749 513"

@@ -36,8 +36,10 @@ const Title = () => {
   return (
     <span className="inline-block max-w-[420px]">
       Is Google Analytics{" "}
-      <span className="text-[96px] text-[#FC4E4E] ">ILLEGAL</span> in{" "}
-      <span className="text-[#F9BD2B]">The Netherlands?</span>
+      <span className="text-[70px] sm:text-[96px] text-[#FC4E4E] block">
+        ILLEGAL
+      </span>{" "}
+      in <span className="text-[#F9BD2B]">The Netherlands?</span>
     </span>
   );
 };
