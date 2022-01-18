@@ -21,7 +21,7 @@ a {
   @apply m-0 uppercase h-[275px];
 }
 .text-ticker {
-  animation: ticker 18s linear infinite;
+  animation: ticker 36s linear infinite;
 }
 
 .body-container p:first-of-type {
