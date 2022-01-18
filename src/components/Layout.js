@@ -6,7 +6,7 @@ import logo from "../images/logo.svg";
 import twitter from "../images/twitter.svg";
 import SEO from "./SEO";
 
-const ShareLink = ({ children, url }) => {
+const ShareLink = ({ children, url, className = "" }) => {
   const width = 626;
   const height = 436;
   const handleClick = () => {
@@ -21,10 +21,7 @@ const ShareLink = ({ children, url }) => {
     }
   };
   return (
-    <button
-      className="text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto"
-      onClick={handleClick}
-    >
+    <button className={className} onClick={handleClick}>
       {children}
     </button>
   );
@@ -69,7 +66,12 @@ export default function Layout({ children, hideMapLink, title }) {
                   <span>Back to map</span>
                 </Link>
               )}
-              <ShareLink url={`https://twitter.com/intent/tweet?url=${href}`}>
+              <ShareLink
+                url={`https://twitter.com/intent/tweet?url=${href}`}
+                className={`text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto ${
+                  hideMapLink ? "mr-auto md:mr-0" : ""
+                }`}
+              >
                 <img src={twitter} />
                 <span>Share this page on Twitter</span>
               </ShareLink>
