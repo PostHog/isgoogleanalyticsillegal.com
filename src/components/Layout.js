@@ -92,7 +92,7 @@ export default function Layout({
               <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
                 <div>
                   <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 space-y-2 sm:space-y-0 m-0 mb-4 sm:mb-1">
-                    <span>This message is furnished by</span>
+                    <span>This message is brought to you by</span>
                     <img className="max-w-[130px]" src={logo} />
                   </h4>
                   <p className="m-0 text-[16px] font-bold">
