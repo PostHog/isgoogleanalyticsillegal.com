@@ -1,12 +1,19 @@
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import * as React from "react";
 import Layout from "../components/Layout";
-import Map from "../components/Map";
+import { Map, MapSmall } from "../components/Map";
 import Main from "../templates/Main";
 
 const Image = () => {
+  const breakpoints = useBreakpoint();
+
   return (
     <figure>
-      <Map className="h-auto w-full" />
+      {breakpoints.sm ? (
+        <Map className="h-auto w-full" />
+      ) : (
+        <MapSmall className="h-auto w-full" />
+      )}
       <figcaption className="text-[14px] font-medium flex items-center justify-end space-x-2 mt-6">
         <svg
           width="18"

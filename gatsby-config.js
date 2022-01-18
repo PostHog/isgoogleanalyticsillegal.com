@@ -19,5 +19,13 @@ module.exports = {
         display: "block",
       },
     },
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: {
+          sm: "(min-width: 640px)",
+        },
+      },
+    },
   ],
 };
