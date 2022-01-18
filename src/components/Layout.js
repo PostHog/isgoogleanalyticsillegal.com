@@ -6,7 +6,7 @@ import logo from "../images/logo.svg";
 import twitter from "../images/twitter.svg";
 import SEO from "./SEO";
 
-const ShareLink = ({ children, url }) => {
+const ShareLink = ({ children, url, className = "" }) => {
   const width = 626;
   const height = 436;
   const handleClick = () => {
@@ -21,16 +21,18 @@ const ShareLink = ({ children, url }) => {
     }
   };
   return (
-    <button
-      className="text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto"
-      onClick={handleClick}
-    >
+    <button className={className} onClick={handleClick}>
       {children}
     </button>
   );
 };
 
-export default function Layout({ children, hideMapLink, title }) {
+export default function Layout({
+  children,
+  hideMapLink,
+  title,
+  shareText = "",
+}) {
   const { href } = useLocation();
   return (
     <>
@@ -59,7 +61,7 @@ export default function Layout({ children, hideMapLink, title }) {
         </div>
         <div className="flex-grow relative flex flex-col md:ml-[75.5px] min-h-screen">
           <header className="py-[10px] border-b border-white border-opacity-20 px-5 flex-shrink-0">
-            <div className="max-w-[1220px] mx-auto flex justify-between">
+            <div className="max-w-[1220px] mx-auto flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
               {!hideMapLink && (
                 <Link
                   to="/"
@@ -69,7 +71,12 @@ export default function Layout({ children, hideMapLink, title }) {
                   <span>Back to map</span>
                 </Link>
               )}
-              <ShareLink url={`https://twitter.com/intent/tweet?url=${href}`}>
+              <ShareLink
+                url={`https://twitter.com/intent/tweet?url=${href}&text=${shareText}&hashtags=thanksGDPR`}
+                className={`text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto justify-center w-full sm:w-auto ${
+                  hideMapLink ? "mr-auto md:mr-0" : ""
+                }`}
+              >
                 <img src={twitter} />
                 <span>Share this page on Twitter</span>
               </ShareLink>
@@ -80,27 +87,44 @@ export default function Layout({ children, hideMapLink, title }) {
               {children}
             </div>
           </main>
-          <footer className="w-full px-5 pt-0 pb-14 max-w-[1220px] mx-auto flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
-            <div>
-              <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 m-0 mb-4 sm:mb-1">
-                <span>This message is furnished by</span>
-                <img className="max-w-[130px]" src={logo} />
-              </h4>
-              <p className="m-0 text-[16px] font-bold">
-                PostHog is the only{" "}
-                <span className="text-[#FF7636]">
-                  open source product analytics platform
-                </span>{" "}
-                where customer data never leaves your infrastructure.
-              </p>
-            </div>
-            <div className="flex-shrink-0">
-              <a
-                className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00]"
-                href="https://posthog.com"
-              >
-                Learn more at PostHog.com
-              </a>
+          <footer className="w-full px-5 pt-14 pb-3 border-t border-white border-opacity-20">
+            <div className="max-w-[1220px] mx-auto">
+              <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
+                <div>
+                  <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 space-y-2 sm:space-y-0 m-0 mb-4 sm:mb-1">
+                    <span>This message is brought to you by</span>
+                    <img className="max-w-[130px]" src={logo} />
+                  </h4>
+                  <p className="m-0 text-[16px] font-bold">
+                    PostHog is the only{" "}
+                    <a
+                      href="https://github.com/PostHog/posthog"
+                      className="text-[#FF7636]"
+                    >
+                      open source product analytics platform
+                    </a>{" "}
+                    where customer data never leaves your infrastructure.
+                  </p>
+                </div>
+                <div className="flex-shrink-0">
+                  <a
+                    className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00] text-center w-full sm:w-auto"
+                    href="https://posthog.com"
+                  >
+                    Learn more at PostHog.com
+                  </a>
+                </div>
+              </div>
+              <div className="sm:text-right mt-8 sm:mt-14">
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.amcharts.com/"
+                  className="text-[12px] font-bold text-white opacity-50"
+                >
+                  SVG maps courtesy of amCharts
+                </a>
+              </div>
             </div>
           </footer>
         </div>

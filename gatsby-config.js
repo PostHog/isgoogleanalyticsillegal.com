@@ -15,8 +15,35 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Libre Franklin`],
-        display: "swap",
+        fonts: [`Libre Franklin\:500,600,700`],
+        display: "block",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-breakpoints",
+      options: {
+        queries: {
+          sm: "(min-width: 640px)",
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "src/images/favicon.png",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-posthog`,
+      options: {
+        apiKey: "sTMFPsFhdP1Ssg",
+        apiHost: "https://app.posthog.com",
+        head: true,
+        isEnabledDevMode: true,
+        initOptions: {
+          _capture_metrics: true,
+          persistence: "localStorage+cookie",
+        },
       },
     },
   ],

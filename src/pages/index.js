@@ -1,12 +1,19 @@
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import * as React from "react";
 import Layout from "../components/Layout";
-import Map from "../components/Map";
+import { Map, MapSmall } from "../components/Map";
 import Main from "../templates/Main";
 
 const Image = () => {
+  const breakpoints = useBreakpoint();
+
   return (
     <figure>
-      <Map className="h-auto w-full" />
+      {breakpoints.sm ? (
+        <Map className="h-auto w-full" />
+      ) : (
+        <MapSmall className="h-auto w-full" />
+      )}
       <figcaption className="text-[14px] font-medium flex items-center justify-end space-x-2 mt-6">
         <svg
           width="18"
@@ -57,7 +64,7 @@ const Body = () => {
 
 const Title = () => {
   return (
-    <span className="inline-block max-w-[410px]">
+    <span className="inline-block max-w-[430px]">
       Is Google Analytics{" "}
       <span className="text-[70px] sm:text-[96px] text-[#FC4E4E] block">
         ILLEGAL
@@ -69,7 +76,10 @@ const Title = () => {
 
 export default function Index() {
   return (
-    <Layout hideMapLink>
+    <Layout
+      hideMapLink
+      shareText="Is Google Analytics illegal in your country?"
+    >
       <Main image={<Image />} body={<Body />} title={<Title />} />
     </Layout>
   );

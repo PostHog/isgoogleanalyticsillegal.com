@@ -15,15 +15,20 @@ const Body = () => {
         The Austrian DPA held that the use of Google Analytics by an Austrian
         website provider led to transfers of personal data to Google LLC in the
         U.S.{" "}
-        <span className="text-[#F9BD2B]">
+        <a
+          href="https://gdprhub.eu/index.php?title=DSB_(Austria)_-_2021-0.586.257_(D155.027)"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[#F9BD2B]"
+        >
           in violation of Chapter V. of the GDPR.
-        </span>
+        </a>
       </p>
       <a
         rel="noopener noreferrer"
         target="_blank"
         href="https://gdprhub.eu/index.php?title=DSB_(Austria)_-_2021-0.586.257_(D155.027)"
-        className="inline-flex space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50"
+        className="inline-flex justify-between space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50 w-full sm:w-auto"
       >
         <span>Read more on GDPRhub</span>
         <img className="opacity-50 transform rotate-[135deg]" src={arrow} />
@@ -34,7 +39,7 @@ const Body = () => {
 
 const Title = () => {
   return (
-    <span className="inline-block max-w-[410px]">
+    <span className="inline-block max-w-[430px]">
       Is Google Analytics{" "}
       <span className="text-[70px] sm:text-[96px] text-[#FC4E4E] block">
         ILLEGAL
@@ -46,7 +51,10 @@ const Title = () => {
 
 export default function Index() {
   return (
-    <Layout title="Austria">
+    <Layout
+      title="Austria"
+      shareText="Did you know Google Analytics is illegal in Austria?"
+    >
       <Main image={<Image />} body={<Body />} title={<Title />} />
     </Layout>
   );
