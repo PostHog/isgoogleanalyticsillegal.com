@@ -69,7 +69,10 @@ const Title = () => {
 
 export default function Index() {
   return (
-    <Layout hideMapLink>
+    <Layout
+      hideMapLink
+      shareText="Is Google Analytics illegal in your country?"
+    >
       <Main image={<Image />} body={<Body />} title={<Title />} />
     </Layout>
   );

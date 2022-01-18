@@ -27,7 +27,12 @@ const ShareLink = ({ children, url, className = "" }) => {
   );
 };
 
-export default function Layout({ children, hideMapLink, title }) {
+export default function Layout({
+  children,
+  hideMapLink,
+  title,
+  shareText = "",
+}) {
   const { href } = useLocation();
   return (
     <>
@@ -67,7 +72,7 @@ export default function Layout({ children, hideMapLink, title }) {
                 </Link>
               )}
               <ShareLink
-                url={`https://twitter.com/intent/tweet?url=${href}`}
+                url={`https://twitter.com/intent/tweet?url=${href}&text=${shareText}&hashtags=thanksGDPR`}
                 className={`text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto justify-center w-full sm:w-auto ${
                   hideMapLink ? "mr-auto md:mr-0" : ""
                 }`}

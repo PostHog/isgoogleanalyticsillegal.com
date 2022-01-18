@@ -51,7 +51,10 @@ const Title = () => {
 
 export default function Index() {
   return (
-    <Layout title="Austria">
+    <Layout
+      title="Austria"
+      shareText="Did you know Google Analytics is illegal in Austria?"
+    >
       <Main image={<Image />} body={<Body />} title={<Title />} />
     </Layout>
   );
