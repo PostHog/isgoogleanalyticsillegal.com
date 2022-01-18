@@ -14,9 +14,14 @@ const Body = () => {
       <p>
         The Dutch Data Protection Authority warns that the use of Google
         Analytics 'may soon no longer be allowed', after{" "}
-        <span className="text-[#F9BD2B]">
+        <a
+          href="https://noyb.eu/en/austrian-dsb-eu-us-data-transfers-google-analytics-illegal"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#F9BD2B]"
+        >
           a ruling by the Austrian privacy regulator.
-        </span>{" "}
+        </a>{" "}
         A definitive conclusion is said to come at the beginning of 2022.
       </p>
       <a

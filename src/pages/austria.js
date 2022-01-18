@@ -15,9 +15,14 @@ const Body = () => {
         The Austrian DPA held that the use of Google Analytics by an Austrian
         website provider led to transfers of personal data to Google LLC in the
         U.S.{" "}
-        <span className="text-[#F9BD2B]">
+        <a
+          href="https://gdprhub.eu/index.php?title=DSB_(Austria)_-_2021-0.586.257_(D155.027)"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="text-[#F9BD2B]"
+        >
           in violation of Chapter V. of the GDPR.
-        </span>
+        </a>
       </p>
       <a
         rel="noopener noreferrer"
