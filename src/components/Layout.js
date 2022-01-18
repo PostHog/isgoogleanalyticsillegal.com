@@ -86,7 +86,7 @@ export default function Layout({ children, hideMapLink, title }) {
             <div className="max-w-[1220px] mx-auto">
               <div className="flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between lg:items-end flex-shrink-0 lg:space-x-2">
                 <div>
-                  <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 m-0 mb-4 sm:mb-1">
+                  <h4 className="text-[20px] font-bold flex flex-col sm:flex-row sm:items-center sm:space-x-2 space-y-2 sm:space-y-0 m-0 mb-4 sm:mb-1">
                     <span>This message is furnished by</span>
                     <img className="max-w-[130px]" src={logo} />
                   </h4>
