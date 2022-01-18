@@ -56,7 +56,7 @@ export default function Layout({ children, hideMapLink, title }) {
         </div>
         <div className="flex-grow relative flex flex-col md:ml-[75.5px] min-h-screen">
           <header className="py-[10px] border-b border-white border-opacity-20 px-5 flex-shrink-0">
-            <div className="max-w-[1220px] mx-auto flex justify-between">
+            <div className="max-w-[1220px] mx-auto flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
               {!hideMapLink && (
                 <Link
                   to="/"
@@ -68,7 +68,7 @@ export default function Layout({ children, hideMapLink, title }) {
               )}
               <ShareLink
                 url={`https://twitter.com/intent/tweet?url=${href}`}
-                className={`text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto ${
+                className={`text-[14px] font-bold bg-[#1DA1F2] p-[10px] rounded flex items-center space-x-2 ml-auto justify-center w-full sm:w-auto ${
                   hideMapLink ? "mr-auto md:mr-0" : ""
                 }`}
               >
@@ -103,7 +103,7 @@ export default function Layout({ children, hideMapLink, title }) {
                 </div>
                 <div className="flex-shrink-0">
                   <a
-                    className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00]"
+                    className="text-[14px] font-bold bg-white p-[10px] rounded text-[#F54E00] text-center w-full sm:w-auto"
                     href="https://posthog.com"
                   >
                     Learn more at PostHog.com

@@ -28,7 +28,7 @@ const Body = () => {
         rel="noopener noreferrer"
         target="_blank"
         href="https://tweakers.net/nieuws/192020/autoriteit-persoonsgegevens-waarschuwt-voor-mogelijk-verbod-op-google-analytics.html"
-        className="inline-flex space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50"
+        className="inline-flex justify-between space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50 w-full sm:w-auto"
       >
         <span>Read more on Tweakers.net</span>
         <img className="opacity-50 transform rotate-[135deg]" src={arrow} />

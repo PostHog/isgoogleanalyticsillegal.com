@@ -28,7 +28,7 @@ const Body = () => {
         rel="noopener noreferrer"
         target="_blank"
         href="https://gdprhub.eu/index.php?title=DSB_(Austria)_-_2021-0.586.257_(D155.027)"
-        className="inline-flex space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50"
+        className="inline-flex justify-between space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50 w-full sm:w-auto"
       >
         <span>Read more on GDPRhub</span>
         <img className="opacity-50 transform rotate-[135deg]" src={arrow} />
