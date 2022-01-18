@@ -15,8 +15,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Libre Franklin`],
-        display: "swap",
+        fonts: [`Libre Franklin\:500,600,700`],
+        display: "block",
       },
     },
   ],
