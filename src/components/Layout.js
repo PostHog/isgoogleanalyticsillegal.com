@@ -88,9 +88,12 @@ export default function Layout({ children, hideMapLink, title }) {
               </h4>
               <p className="m-0 text-[16px] font-bold">
                 PostHog is the only{" "}
-                <span className="text-[#FF7636]">
+                <a
+                  href="https://github.com/PostHog/posthog"
+                  className="text-[#FF7636]"
+                >
                   open source product analytics platform
-                </span>{" "}
+                </a>{" "}
                 where customer data never leaves your infrastructure.
               </p>
             </div>
