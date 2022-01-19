@@ -1,13 +1,12 @@
 # Is Google Analytics Illegal? 🙀
-## An open source project to store rulings
 
-This is a place to store rulings around Google Analtyics' use, stored by country.
+_An open source project to store rulings for Google Analytics use by country_
 
 # Contributions welcome
 
 We would appreciate contributions around:
 
-* Relevant rulings
+* Relevant GDPR rulings
 * Links to useful resources for those building websites/products to follow GDPR guidance
 
 # Run by PostHog
