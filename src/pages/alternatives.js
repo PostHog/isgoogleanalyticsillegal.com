@@ -97,6 +97,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+  {
+    company: "Fugu",
+    url: "https://fugu.lol",
+    description: "Product analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
