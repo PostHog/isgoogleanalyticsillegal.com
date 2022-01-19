@@ -42,7 +42,7 @@ table p {
 }
 
 .body-container p:first-of-type {
-  @apply first-letter:float-left first-letter:text-[56px] first-letter:leading-[.9] first-letter:font-bold;
+  @apply first-letter:float-left first-letter:text-[56px] first-letter:leading-[.9] first-letter:font-bold first-letter:mr-1;
 }
 
 .blue-link {

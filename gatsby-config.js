@@ -13,13 +13,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-postcss",
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`Libre Franklin\:500,600,700`],
-        display: "block",
-      },
-    },
-    {
       resolve: "gatsby-plugin-breakpoints",
       options: {
         queries: {
@@ -42,7 +35,7 @@ module.exports = {
         isEnabledDevMode: true,
         initOptions: {
           _capture_metrics: true,
-          persistence: "localStorage+cookie",
+          persistence: "memory",
         },
       },
     },

@@ -66,10 +66,10 @@ export default function Layout({
               {!hideMapLink && (
                 <Link
                   to="/"
-                  className="text-[15px] font-bold flex space-x-2 items-center"
+                  className="text-[15px] flex space-x-2 items-center text-white"
                 >
                   <img className="opacity-50" src={arrow} />
-                  <span>Back to map</span>
+                  <span className="leading-[normal]">Back to map</span>
                 </Link>
               )}
               <ShareLink
@@ -98,14 +98,14 @@ export default function Layout({
                       <img className="max-w-[130px]" src={logo} />
                     </h4>
                     <p className="m-0 text-[16px] font-bold">
-                      PostHog is the only{" "}
+                      PostHog is an{" "}
                       <a
                         href="https://github.com/PostHog/posthog"
                         className="text-[#FF7636]"
                       >
                         open source product analytics platform
                       </a>{" "}
-                      where customer data never leaves your infrastructure.
+                      where customer data never needs to leave your infrastructure.
                     </p>
                   </div>
                   <div className="flex-shrink-0">
