@@ -48,6 +48,10 @@ table p {
   @apply first-letter:float-left first-letter:text-[56px] first-letter:leading-[.9] first-letter:font-bold;
 }
 
+.blue-link {
+  color:blue;
+}
+
 @keyframes ticker {
   0% {
     transform: translate3d(0, 0, 0);

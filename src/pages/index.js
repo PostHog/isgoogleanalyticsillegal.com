@@ -37,7 +37,7 @@ const Image = () => {
 
         <span>
           Select a country in <strong className="text-[#FF5F5F]">red</strong> to
-          read details about Google Analytics legality
+          see rulings concerning Google Analytics legality
         </span>
       </figcaption>
     </figure>
@@ -56,9 +56,11 @@ const Body = () => {
         may now be illegal.
       </p>
       <p>
-        The best solution is to use an analytics provider that keeps data on
-        your own infrastructure.
+        The safest solution is to use an analytics provider that keeps data on
+        your own infrastructure. If you stick with GA - learn about <a class="blue-link" href="https://support.google.com/analytics/topic/2919631?hl=en&ref_topic=1008008">their data privacy settings</a>.
       </p>
+      <p>More rulings are expected in 2022. We'll add them, or <a class="blue-link" href="https://github.com/PostHog/isgoogleanalyticsillegal.com">submit a PR</a>.</p>
+
       <Link
         rel="noopener noreferrer"
         target="_blank"

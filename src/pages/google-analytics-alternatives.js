@@ -46,16 +46,9 @@ const tableData = [
     company: "PostHog",
     url: "https://posthog.com",
     description:
-      "Product analytics with session recording, feature flags, heatmaps",
-    openSource: true,
-    cloudHosting: true,
-    selfHosting: true,
-  },
-  {
-    company: "Plausible",
-    url: "https://plausible.io/",
-    description: "Google Analytics alternative",
-    openSource: true,
+      "Website analytics, product analytics, experimentation, session recording, feature flags, plugins, warehouse-compatible",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
     cloudHosting: true,
     selfHosting: true,
   },
@@ -63,9 +56,46 @@ const tableData = [
     company: "Fathom",
     url: "https://usefathom.com/",
     description: "Website analytics",
-    openSource: false,
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
     cloudHosting: true,
-    selfHosting: false,
+    selfHosting: true,
+  },
+  {
+    company: "Plausible",
+    url: "https://plausible.io/",
+    description: "Website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Matomo",
+    url: "https://matomo.org/",
+    description: "Website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Open Web Analytics",
+    url: "https://openwebanalytics.com/",
+    description: "Website analytics, session recording",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: false,
+    selfHosting: true,
+  },
+  {
+    company: "Countly",
+    url: "https://count.ly/",
+    description: "Website analytics, product analytics, experimentation, plugins",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: true,
   },
 ];
 
@@ -76,7 +106,8 @@ const Extra = () => {
         <tr className="sm:table-row hidden">
           <th></th>
           <th></th>
-          <th>Open source</th>
+          <th>Permissive open source</th>
+          <th>Copyleft open source</th>
           <th>Cloud hosting</th>
           <th>Self hosting</th>
         </tr>
@@ -84,7 +115,8 @@ const Extra = () => {
           ({
             company,
             description,
-            openSource,
+            permissiveOpenSource,
+            copyleftOpenSource,
             cloudHosting,
             selfHosting,
             url,
@@ -99,9 +131,15 @@ const Extra = () => {
                 </td>
                 <td className="sm:table-cell flex justify-between">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
-                    Open source
+                    Permissive open source
                   </span>{" "}
-                  {openSource && <Check />}
+                  {permissiveOpenSource && <Check />}
+                </td>
+                <td className="sm:table-cell flex justify-between">
+                  <span className="sm:hidden inline-block opacity-50 font-medium">
+                    Copyleft open source
+                  </span>{" "}
+                  {copyleftOpenSource && <Check />}
                 </td>
                 <td className="sm:table-cell flex justify-between">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
