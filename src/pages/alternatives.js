@@ -97,6 +97,24 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+  {
+    company: "Visitor Analytics",
+    url: "https://www.visitor-analytics.io/en/",
+    description: "Website analytics, heatmaps, session recording",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: false,
+  },
+  {
+    company: "66Analytics",
+    url: "https://66analytics.com/",
+    description: "Website analytics, heatmaps, session recording",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: false,
+    selfHosting: true,
+  },   
 ];
 
 const Extra = () => {
