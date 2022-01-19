@@ -49,7 +49,7 @@ const tableData = [
       "Website analytics, product analytics, experimentation, session recording, feature flags, plugins, warehouse-compatible",
     permissiveOpenSource: true,
     copyleftOpenSource: false,
-    cloudHosting: true,
+    cloudHosting: false,
     selfHosting: true,
   },
   {
