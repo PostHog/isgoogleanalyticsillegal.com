@@ -1,0 +1,2 @@
+window.location.href="/alternatives"
+
