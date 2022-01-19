@@ -15,14 +15,11 @@ li {
 
 a {
   @apply inline-block;
+  color: #F9BD2B;
 }
 
 table {
   @apply max-w-[960px] w-full text-[14px] font-medium;
-}
-
-table th {
-  @apply opacity-50 font-medium;
 }
 
 table a {
@@ -46,6 +43,10 @@ table p {
 
 .body-container p:first-of-type {
   @apply first-letter:float-left first-letter:text-[56px] first-letter:leading-[.9] first-letter:font-bold;
+}
+
+.blue-link {
+  color:blue;
 }
 
 @keyframes ticker {

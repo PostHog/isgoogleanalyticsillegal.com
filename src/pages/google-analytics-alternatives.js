@@ -46,16 +46,9 @@ const tableData = [
     company: "PostHog",
     url: "https://posthog.com",
     description:
-      "Product analytics with session recording, feature flags, heatmaps",
-    openSource: true,
-    cloudHosting: true,
-    selfHosting: true,
-  },
-  {
-    company: "Plausible",
-    url: "https://plausible.io/",
-    description: "Google Analytics alternative",
-    openSource: true,
+      "Website analytics, product analytics, experimentation, session recording, feature flags, plugins, warehouse-compatible",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
     cloudHosting: true,
     selfHosting: true,
   },
@@ -63,28 +56,67 @@ const tableData = [
     company: "Fathom",
     url: "https://usefathom.com/",
     description: "Website analytics",
-    openSource: false,
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
     cloudHosting: true,
-    selfHosting: false,
+    selfHosting: true,
+  },
+  {
+    company: "Plausible",
+    url: "https://plausible.io/",
+    description: "Website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Matomo",
+    url: "https://matomo.org/",
+    description: "Website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Open Web Analytics",
+    url: "https://openwebanalytics.com/",
+    description: "Website analytics, session recording",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: false,
+    selfHosting: true,
+  },
+  {
+    company: "Countly",
+    url: "https://count.ly/",
+    description: "Website analytics, product analytics, experimentation, plugins",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: true,
   },
 ];
 
 const Extra = () => {
   return (
     <>
-      <table>
+      <table className="max-w-full">
         <tr className="sm:table-row hidden">
           <th></th>
           <th></th>
-          <th>Open source</th>
-          <th>Cloud hosting</th>
-          <th>Self hosting</th>
+          <th><span className="opacity-50">Open source (</span><a href="https://opensource.org/faq#permissive" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Permissive</a><span className="opacity-50">)</span></th>
+          <th><span className="opacity-50">Open source (</span><a href="https://opensource.org/faq#copyleft" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Copyleft</a><span className="opacity-50">)</span></th>
+          <th><span className="opacity-50">Cloud hosting</span></th>
+          <th><span className="opacity-50">Self hosting</span></th>
         </tr>
         {tableData.map(
           ({
             company,
             description,
-            openSource,
+            permissiveOpenSource,
+            copyleftOpenSource,
             cloudHosting,
             selfHosting,
             url,
@@ -95,13 +127,19 @@ const Extra = () => {
                   <a href={url}>{company}</a>
                 </td>
                 <td className="w-[270px]">
-                  <p>{description}</p>
+                  <p className="text-sm text-white text-opacity-75">{description}</p>
                 </td>
                 <td className="sm:table-cell flex justify-between">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
-                    Open source
+                    Permissive open source
                   </span>{" "}
-                  {openSource && <Check />}
+                  {permissiveOpenSource && <Check />}
+                </td>
+                <td className="sm:table-cell flex justify-between">
+                  <span className="sm:hidden inline-block opacity-50 font-medium">
+                    Copyleft open source
+                  </span>{" "}
+                  {copyleftOpenSource && <Check />}
                 </td>
                 <td className="sm:table-cell flex justify-between">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
