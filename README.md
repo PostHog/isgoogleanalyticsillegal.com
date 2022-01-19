@@ -1,4 +1,5 @@
-# Is Google Analytics Illegal?  An open source project to store rulings
+# Is Google Analytics Illegal? 🙀
+## An open source project to store rulings
 
 This is a place to store rulings around Google Analtyics' use, stored by country.
 
