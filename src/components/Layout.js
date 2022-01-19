@@ -66,10 +66,10 @@ export default function Layout({
               {!hideMapLink && (
                 <Link
                   to="/"
-                  className="text-[15px] font-bold flex space-x-2 items-center"
+                  className="text-[15px] flex space-x-2 items-center text-white"
                 >
                   <img className="opacity-50" src={arrow} />
-                  <span>Back to map</span>
+                  <span className="leading-[normal]">Back to map</span>
                 </Link>
               )}
               <ShareLink
