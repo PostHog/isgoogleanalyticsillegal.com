@@ -64,7 +64,7 @@ const Body = () => {
       <Link
         rel="noopener noreferrer"
         target="_blank"
-        to="/google-analytics-alternatives"
+        to="/alternatives"
         className="inline-flex justify-between space-x-1 items-center text-[14px] text-white font-bold p-[10px] rounded border border-white border-opacity-50 hover:border-opacity-75 w-full sm:w-auto"
       >
         <span>See Google Analytics alternatives</span>
