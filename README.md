@@ -2,9 +2,12 @@
 
 This is a place to store rulings around Google Analtyics' use, stored by country.
 
-# We'd love contributions
+# Contributions welcome
 
-If you see relevant rulings that we should add, we'd love a PR.
+We would appreciate contributions around:
+
+* Relevant rulings
+* Links to useful resources for those building websites/products to follow GDPR guidance
 
 # Run by PostHog
 
