@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { useBreakpoint } from "gatsby-plugin-breakpoints";
 import * as React from "react";
 import Layout from "../components/Layout";
@@ -12,7 +13,7 @@ const Image = () => {
       {breakpoints.sm ? (
         <Map className="h-auto w-full" />
       ) : (
-        <MapSmall className="h-auto w-full" />
+        <MapSmall className="h-auto w-full sm:hidden" />
       )}
       <figcaption className="text-[14px] font-medium flex items-center justify-end space-x-2 mt-6">
         <svg
@@ -58,6 +59,14 @@ const Body = () => {
         The best solution is to use an analytics provider that keeps data on
         your own infrastructure.
       </p>
+      <Link
+        rel="noopener noreferrer"
+        target="_blank"
+        to="/google-analytics-alternatives"
+        className="inline-flex justify-between space-x-1 items-center text-[14px] font-bold p-[10px] rounded border border-white border-opacity-50 w-full sm:w-auto"
+      >
+        <span>See Google Analytics alternatives</span>
+      </Link>
     </>
   );
 };
