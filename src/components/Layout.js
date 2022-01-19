@@ -42,7 +42,7 @@ export default function Layout({
         <div className="max-h-screen overflow-hidden flex-shrink-0 fixed md:block hidden">
           <aside
             style={{ writingMode: "vertical-lr" }}
-            className="whitespace-nowrap bg-[#FC4E4E] transform -scale-y-100 -scale-x-100 px-[25px]"
+            className="whitespace-nowrap bg-[#FC4E4E] transform -scale-y-100 -scale-x-100 px-[25px] w-[75.5px] flex items-center"
           >
             <div className="text-ticker flex">
               <p>Is Google Analytics illegal?</p>
