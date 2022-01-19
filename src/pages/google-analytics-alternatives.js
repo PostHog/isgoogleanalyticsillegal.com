@@ -97,6 +97,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+  {
+    company: "Pirsch Analytics",
+    url: "https://pirsch.io/",
+    description: "Pirsch is simple, privacy-friendly, open-source web analytics — lightweight, cookie-free and easily integrated into any website or backend.",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
