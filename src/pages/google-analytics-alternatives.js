@@ -52,6 +52,14 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "GoAccess",
+    url: "https://goaccess.io/",
+    description: "Website analytics",
+    openSource: true,
+    cloudHosting: false,
+    selfHosting: true,
+  },
+  {
     company: "Plausible",
     url: "https://plausible.io/",
     description: "Google Analytics alternative",
