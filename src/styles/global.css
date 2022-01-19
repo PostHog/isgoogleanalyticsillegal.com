@@ -17,6 +17,26 @@ a {
   @apply inline-block;
 }
 
+table {
+  @apply max-w-[960px] w-full text-[14px] font-medium;
+}
+
+table th {
+  @apply opacity-50 font-medium;
+}
+
+table a {
+  @apply text-[17px] text-[#FF7636] font-bold;
+}
+
+table td {
+  @apply py-[10px] sm:py-[20px] sm:table-cell block;
+}
+
+table p {
+  @apply m-0;
+}
+
 .text-ticker p {
   @apply m-0 uppercase h-[275px];
 }
