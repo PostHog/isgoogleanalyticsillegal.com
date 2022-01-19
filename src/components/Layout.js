@@ -98,14 +98,14 @@ export default function Layout({
                       <img className="max-w-[130px]" src={logo} />
                     </h4>
                     <p className="m-0 text-[16px] font-bold">
-                      PostHog is the only{" "}
+                      PostHog is an{" "}
                       <a
                         href="https://github.com/PostHog/posthog"
                         className="text-[#FF7636]"
                       >
                         open source product analytics platform
                       </a>{" "}
-                      where customer data never leaves your infrastructure.
+                      where customer data never needs to leave your infrastructure.
                     </p>
                   </div>
                   <div className="flex-shrink-0">

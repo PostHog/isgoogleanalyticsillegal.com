@@ -35,7 +35,7 @@ module.exports = {
         isEnabledDevMode: true,
         initOptions: {
           _capture_metrics: true,
-          persistence: "localStorage",
+          persistence: "memory",
         },
       },
     },
