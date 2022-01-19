@@ -1,6 +1,7 @@
-window.location.href="/alternatives"
+import * as React from "react";
+import Layout from "../components/Layout";
+import Main from "../templates/Main";
 
-<<<<<<< HEAD
 const Check = () => {
   return (
     <svg
@@ -193,5 +194,3 @@ export default function Index() {
     </Layout>
   );
 }
-=======
->>>>>>> a4bf45065f1f2a06f59d51f2f54384c50874dd19
