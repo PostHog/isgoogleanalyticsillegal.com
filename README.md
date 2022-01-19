@@ -1,13 +1,28 @@
-# Is Google Analytics Illegal?  An open source project to store rulings
+# Is Google Analytics Illegal? 🙀
 
-This is a place to store rulings around Google Analtyics' use, stored by country.
+_An open source project to store rulings for Google Analytics use by country_
 
 # Contributions welcome
 
 We would appreciate contributions around:
 
-* Relevant rulings
+* Relevant GDPR rulings
 * Links to useful resources for those building websites/products to follow GDPR guidance
+
+# Running locally
+
+This is powered by Gatsby.
+
+Pre-requisites:
+
+* [Node.js](https://www.gatsbyjs.com/docs/tutorial/part-0/#nodejs) (v14.15 or newer)
+* Gatsby CLI - run `npm install -g gatsby-cli`
+
+Run site:
+
+* Clone repo
+* Run `yarn install` to install dependencies
+* Run `gatsby develop`
 
 # Run by PostHog
 
