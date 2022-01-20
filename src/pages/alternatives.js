@@ -53,6 +53,15 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "GoAccess",
+    url: "https://goaccess.io/",
+    description: "Website analytics",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
+    cloudHosting: false,
+    selfHosting: true,
+  },  
+  {
     company: "Fathom",
     url: "https://usefathom.com/",
     description: "Website analytics",
