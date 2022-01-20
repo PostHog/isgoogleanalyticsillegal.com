@@ -100,7 +100,7 @@ const tableData = [
   {
     company: "Pirsch Analytics",
     url: "https://pirsch.io/",
-    description: "Pirsch is simple, privacy-friendly, open-source web analytics — lightweight, cookie-free and easily integrated into any website or backend.",
+    description: "Website analytics",
     permissiveOpenSource: false,
     copyleftOpenSource: true,
     cloudHosting: true,
