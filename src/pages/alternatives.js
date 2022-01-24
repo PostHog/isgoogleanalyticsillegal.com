@@ -60,7 +60,7 @@ const tableData = [
     copyleftOpenSource: false,
     cloudHosting: false,
     selfHosting: true,
-  },  
+  },
   {
     company: "Fathom",
     url: "https://usefathom.com/",
@@ -100,7 +100,8 @@ const tableData = [
   {
     company: "Countly",
     url: "https://count.ly/",
-    description: "Website analytics, product analytics, experimentation, plugins",
+    description:
+      "Website analytics, product analytics, experimentation, plugins",
     permissiveOpenSource: false,
     copyleftOpenSource: false,
     cloudHosting: true,
@@ -123,7 +124,16 @@ const tableData = [
     copyleftOpenSource: false,
     cloudHosting: false,
     selfHosting: true,
-  },   
+  },
+  {
+    company: "TelemetryDeck",
+    url: "https://telemetrydeck.com/",
+    description: "100% anonymized analytics for apps and websites",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
