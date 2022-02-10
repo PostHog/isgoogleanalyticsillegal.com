@@ -115,6 +115,7 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+  {
     company: "Visitor Analytics",
     url: "https://www.visitor-analytics.io/en/",
     description: "Website analytics, heatmaps, session recording",
