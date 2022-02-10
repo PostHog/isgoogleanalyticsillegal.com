@@ -167,11 +167,11 @@ const Extra = () => {
   return (
     <>
       <table className="max-w-full">
-        <tr className="sm:table-row hidden">
+        <tr className="sm:table-row hidden align-top">
           <th></th>
           <th></th>
-          <th><span className="opacity-50">Open source (</span><a href="https://opensource.org/faq#permissive" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Permissive</a><span className="opacity-50">)</span></th>
-          <th><span className="opacity-50">Open source (</span><a href="https://opensource.org/faq#copyleft" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Copyleft</a><span className="opacity-50">)</span></th>
+          <th><span className="opacity-50">Open source <br />(</span><a href="https://opensource.org/faq#permissive" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Permissive</a><span className="opacity-50">)</span></th>
+          <th><span className="opacity-50">Open source <br />(</span><a href="https://opensource.org/faq#copyleft" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Copyleft</a><span className="opacity-50">)</span></th>
           <th><span className="opacity-50">Cloud hosting</span></th>
           <th><span className="opacity-50">Self hosting</span></th>
         </tr>
