@@ -62,6 +62,15 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "Simple Analytics",
+    url: "https://simpleanalytics.com/",
+    description: "European privacy-first analytics (without using IP's)",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: false,
+  },
+  {
     company: "Fathom",
     url: "https://usefathom.com/",
     description: "Website analytics",
