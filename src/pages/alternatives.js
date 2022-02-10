@@ -117,6 +117,15 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "Pirsch Analytics",
+    url: "https://pirsch.io/",
+    description: "Website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: false,
+  },
+  {
     company: "Visitor Analytics",
     url: "https://www.visitor-analytics.io/en/",
     description: "Website analytics, heatmaps, session recording",
