@@ -161,6 +161,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+  {
+    company: "Insights",
+    url: "https://getinsights.io",
+    description: "Privacy-focused, cookie-free Google Analytics alternative",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
