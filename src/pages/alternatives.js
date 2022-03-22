@@ -170,6 +170,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+  {
+    company: "Chiffre",
+    url: "https://chiffre.io",
+    description: "End-to-end encrypted web analytics (hosted in France)",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
