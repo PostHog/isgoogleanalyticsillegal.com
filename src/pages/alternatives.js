@@ -170,6 +170,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+  {
+    company: "Swetrix",
+    url: "https://swetrix.com",
+    description: "Cookieless and privacy-focused website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
