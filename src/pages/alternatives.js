@@ -179,6 +179,15 @@ const tableData = [
     cloudHosting: false,
     selfHosting: true,
   },
+  {
+    company: "Chiffre",
+    url: "https://chiffre.io",
+    description: "End-to-end encrypted web analytics (hosted in France)",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
@@ -188,10 +197,36 @@ const Extra = () => {
         <tr className="sm:table-row hidden align-top">
           <th></th>
           <th></th>
-          <th><span className="opacity-50">Open source <br />(</span><a href="https://opensource.org/faq#permissive" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Permissive</a><span className="opacity-50">)</span></th>
-          <th><span className="opacity-50">Open source <br />(</span><a href="https://opensource.org/faq#copyleft" className="text-sm border-b border-dashed border-white border-opacity-50 font-normal">Copyleft</a><span className="opacity-50">)</span></th>
-          <th><span className="opacity-50">Cloud hosting</span></th>
-          <th><span className="opacity-50">Self hosting</span></th>
+          <th>
+            <span className="opacity-50">
+              Open source <br />(
+            </span>
+            <a
+              href="https://opensource.org/faq#permissive"
+              className="text-sm border-b border-dashed border-white border-opacity-50 font-normal"
+            >
+              Permissive
+            </a>
+            <span className="opacity-50">)</span>
+          </th>
+          <th>
+            <span className="opacity-50">
+              Open source <br />(
+            </span>
+            <a
+              href="https://opensource.org/faq#copyleft"
+              className="text-sm border-b border-dashed border-white border-opacity-50 font-normal"
+            >
+              Copyleft
+            </a>
+            <span className="opacity-50">)</span>
+          </th>
+          <th>
+            <span className="opacity-50">Cloud hosting</span>
+          </th>
+          <th>
+            <span className="opacity-50">Self hosting</span>
+          </th>
         </tr>
         {tableData.map(
           ({
@@ -209,7 +244,9 @@ const Extra = () => {
                   <a href={url}>{company}</a>
                 </td>
                 <td className="w-[270px]">
-                  <p className="text-sm text-white text-opacity-75">{description}</p>
+                  <p className="text-sm text-white text-opacity-75">
+                    {description}
+                  </p>
                 </td>
                 <td className="sm:table-cell flex justify-between">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
