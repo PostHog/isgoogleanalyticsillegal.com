@@ -179,6 +179,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+  {
+    company: "Counter",
+    url: "https://counter.dev",
+    description: "Simple and Privacy-friendly web analytics (No Cookies, logging, IPs)",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
