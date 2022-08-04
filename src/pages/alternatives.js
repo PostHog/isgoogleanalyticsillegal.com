@@ -179,6 +179,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+  {
+    company: "GoatCounter",
+    url: "https://www.goatcounter.com/",
+    description: "Web analytics with Go and SQLite or PostgreSQL, without cookies. Supported by EU NGI.",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
