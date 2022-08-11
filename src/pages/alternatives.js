@@ -205,6 +205,33 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+  {
+    company: "GoatCounter",
+    url: "https://www.goatcounter.com/",
+    description: "Web analytics with Go and SQLite or PostgreSQL, without cookies. Supported by EU NGI.",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Swetrix",
+    url: "https://swetrix.com",
+    description: "Cookieless and privacy-focused website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
+    company: "Counter",
+    url: "https://counter.dev",
+    description: "Simple and Privacy-friendly web analytics (No Cookies, logging, IPs)",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
 ];
 
 const Extra = () => {
