@@ -50,6 +50,7 @@ const tableData = [
     permissiveOpenSource: true,
     copyleftOpenSource: false,
     cloudHosting: true,
+    cloudHostingLocation: "US",
     selfHosting: true,
   },
   {
@@ -68,6 +69,7 @@ const tableData = [
     permissiveOpenSource: false,
     copyleftOpenSource: false,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: false,
   },
   {
@@ -77,6 +79,7 @@ const tableData = [
     permissiveOpenSource: true,
     copyleftOpenSource: false,
     cloudHosting: true,
+    cloudHostingLocation: "EU/US",
     selfHosting: true,
   },
   {
@@ -86,6 +89,7 @@ const tableData = [
     permissiveOpenSource: false,
     copyleftOpenSource: true,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: true,
   },
   {
@@ -104,6 +108,7 @@ const tableData = [
     permissiveOpenSource: false,
     copyleftOpenSource: true,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: true,
   },
   {
@@ -132,6 +137,7 @@ const tableData = [
     permissiveOpenSource: false,
     copyleftOpenSource: true,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: false,
   },
   {
@@ -168,6 +174,7 @@ const tableData = [
     permissiveOpenSource: false,
     copyleftOpenSource: true,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: true,
   },
   {
@@ -186,6 +193,7 @@ const tableData = [
     permissiveOpenSource: true,
     copyleftOpenSource: false,
     cloudHosting: true,
+    cloudHostingLocation: "EU",
     selfHosting: false,
   },
 ];
@@ -195,7 +203,6 @@ const Extra = () => {
     <>
       <table className="max-w-full">
         <tr className="sm:table-row hidden align-top">
-          <th></th>
           <th></th>
           <th>
             <span className="opacity-50">
@@ -235,38 +242,39 @@ const Extra = () => {
             permissiveOpenSource,
             copyleftOpenSource,
             cloudHosting,
+            cloudHostingLocation,
             selfHosting,
             url,
           }) => {
             return (
-              <tr className="border-b border-white border-opacity-20">
-                <td>
-                  <a href={url}>{company}</a>
-                </td>
-                <td className="w-[270px]">
+              <tr className="border-b border-white border-opacity-20" valign="top">
+                <td className="max-w-xs">
+                  <a href={url} className="block">{company}</a>
+
                   <p className="text-sm text-white text-opacity-75">
                     {description}
                   </p>
                 </td>
-                <td className="sm:table-cell flex justify-between">
+                <td className="sm:table-cell flex justify-between pt-5">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Permissive open source
                   </span>{" "}
                   {permissiveOpenSource && <Check />}
                 </td>
-                <td className="sm:table-cell flex justify-between">
+                <td className="sm:table-cell flex justify-between pt-5">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Copyleft open source
                   </span>{" "}
                   {copyleftOpenSource && <Check />}
                 </td>
-                <td className="sm:table-cell flex justify-between">
+                <td className="sm:table-cell flex justify-between pt-5 text-center">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Cloud hosting
                   </span>{" "}
                   {cloudHosting && <Check />}
+                  {cloudHostingLocation && <span className='text-sm opacity-60 block mt-2'>({cloudHostingLocation})</span>}
                 </td>
-                <td className="sm:table-cell flex justify-between">
+                <td className="sm:table-cell flex justify-between pt-5">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Self hosting
                   </span>{" "}
