@@ -186,6 +186,15 @@ const tableData = [
     cloudHosting: true,
     selfHosting: false,
   },
+    {
+    company: "Umami",
+    url: "https://umami.is",
+    description: "Privacy-focused website analytics",
+    permissiveOpenSource: true,
+    copyleftOpenSource: false,
+    cloudHosting: false,
+    selfHosting: true,
+  },
   {
     company: "Chiffre",
     url: "https://chiffre.io",
