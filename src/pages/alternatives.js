@@ -215,6 +215,15 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "Swetrix",
+    url: "https://swetrix.com",
+    description: "Cookieless and privacy-focused website analytics",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
     company: "Counter",
     url: "https://counter.dev",
     description: "Simple and Privacy-friendly web analytics (No Cookies, logging, IPs)",
