@@ -93,6 +93,15 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "Piwik PRO",
+    url: "https://piwik.pro/",
+    description: "Web analytics platform focused on privacy and data security",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    selfHosting: true,
+  },
+  {
     company: "Matomo",
     url: "https://matomo.org/",
     description: "Website analytics",
