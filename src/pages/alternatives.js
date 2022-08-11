@@ -284,7 +284,7 @@ const Extra = () => {
           }) => {
             return (
               <tr className="border-b border-white border-opacity-20" valign="top">
-                <td className="max-w-xs">
+                <td className="md:max-w-xs pt-8 md:pt-4">
                   <a href={url} className="block">{company}</a>
 
                   <p className="text-sm text-white text-opacity-75">
@@ -307,10 +307,12 @@ const Extra = () => {
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Cloud hosting
                   </span>{" "}
-                  {cloudHosting && <Check />}
-                  {cloudHostingLocation && <span className='text-sm opacity-60 block mt-2'>({cloudHostingLocation})</span>}
+                  <span className="flex flex-row-reverse gap-4 md:gap-0 items-end md:block">
+                    {cloudHosting && <Check />}
+                    {cloudHostingLocation && <span className='text-sm opacity-60 block md:mt-2'>({cloudHostingLocation})</span>}
+                  </span>
                 </td>
-                <td className="sm:table-cell flex justify-between pt-5">
+                <td className="sm:table-cell flex justify-between pt-5 pb-8 md:pb-0">
                   <span className="sm:hidden inline-block opacity-50 font-medium">
                     Self hosting
                   </span>{" "}
