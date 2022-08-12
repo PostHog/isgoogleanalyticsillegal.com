@@ -65,9 +65,9 @@ const Body = () => {
         rel="noopener noreferrer"
         target="_blank"
         to="/alternatives"
-        className="inline-flex justify-between space-x-1 items-center text-[14px] text-white font-bold py-3 px-4 rounded border border-white border-opacity-50 hover:border-opacity-75 w-full sm:w-auto"
+        className="inline-flex space-x-1 items-center text-[14px] text-white font-bold py-3 px-4 rounded border border-white border-opacity-50 hover:border-opacity-75 w-full justify-center sm:w-auto"
       >
-        <span>See Google Analytics alternatives</span>
+        <span>Browse Google Analytics alternatives</span>
       </Link>
     </>
   );
