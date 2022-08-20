@@ -26,4 +26,4 @@ Run site:
 
 # Run by PostHog
 
-We're an open source platform for product analytics and much more. [Have a peek](https://github/com/posthog/posthog).
+We're an open source platform for product analytics and much more. [Have a peek](https://github.com/posthog/posthog).
