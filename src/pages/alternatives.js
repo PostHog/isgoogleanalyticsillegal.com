@@ -50,7 +50,7 @@ const tableData = [
     permissiveOpenSource: true,
     copyleftOpenSource: false,
     cloudHosting: true,
-    cloudHostingLocation: "US",
+    cloudHostingLocation: "EU/US",
     selfHosting: true,
   },
   {
