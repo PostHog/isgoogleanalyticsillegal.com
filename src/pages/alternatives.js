@@ -232,6 +232,16 @@ const tableData = [
     cloudHosting: true,
     selfHosting: true,
   },
+    {
+    company: "Wide Angle Analytics",
+    url: "https://wideangle.co/",
+    description: "Strictly GDPR-compliant web analytics without any data transfer outside of EU.",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    cloudHostingLocation: "EU",
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
