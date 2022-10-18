@@ -242,6 +242,16 @@ const tableData = [
     cloudHostingLocation: "EU",
     selfHosting: false,
   },
+  {
+    company: "Onduis Analytics",
+    url: "https://onduis.com/",
+    description: "Privacy focused simple web analytics. Track your visitors in real time, without compromising their privacy.",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: true,
+    cloudHostingLocation: "EU",
+    selfHosting: false,
+  },
 ];
 
 const Extra = () => {
