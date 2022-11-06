@@ -78,7 +78,7 @@ const Title = () => {
     <span className="inline-block max-w-[430px]">
       Is Google Analytics{" "}
       <span className="text-[70px] sm:text-[96px] text-[#FC4E4E] block">
-        ILLEGAL
+        illegal
       </span>{" "}
       in your country?
     </span>
