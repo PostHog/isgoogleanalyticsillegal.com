@@ -84,6 +84,16 @@ const tableData = [
     selfHosting: true,
   },
   {
+    company: "Angelfish",
+    url: "https://analytics.angelfishstats.com",
+    description:
+      "Self-hosted web analytics for your entire organization",
+    permissiveOpenSource: false,
+    copyleftOpenSource: false,
+    cloudHosting: false,
+    selfHosting: true,
+  },
+  {
     company: "Open Web Analytics",
     url: "https://openwebanalytics.com/",
     description: "Website analytics, session recording",
