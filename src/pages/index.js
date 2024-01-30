@@ -59,7 +59,7 @@ const Body = () => {
         The safest solution is to use an analytics provider that keeps data on
         your own infrastructure. If you stick with GA - learn about <a href="https://support.google.com/analytics/topic/2919631?hl=en&ref_topic=1008008">their data privacy settings</a>.
       </p>
-      <p>More rulings are expected throughout 2023. We'll add them, or <a href="https://github.com/PostHog/isgoogleanalyticsillegal.com">submit a PR</a>.</p>
+      <p>More rulings are expected throughout 2024. We'll add them, or <a href="https://github.com/PostHog/isgoogleanalyticsillegal.com">submit a PR</a>.</p>
 
       <Link
         rel="noopener noreferrer"
