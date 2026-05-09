@@ -150,6 +150,17 @@ const tableData = [
     selfHosting: false,
   },
   {
+    company: "Databuddy",
+    url: "https://databuddy.cc/",
+    description:
+      "Lightweight Privacy-first Analytics for Developers",
+    permissiveOpenSource: false,
+    copyleftOpenSource: true,
+    cloudHosting: true,
+    cloudHostingLocation: "EU",
+    selfHosting: true,
+  },
+  {
     company: "TelemetryDeck",
     url: "https://telemetrydeck.com/",
     description: "100% anonymized analytics for apps and websites",
